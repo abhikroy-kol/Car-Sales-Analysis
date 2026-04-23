@@ -1,31 +1,10 @@
 # 🚗 Car Sales Dashboard
 
-> An interactive Power BI dashboard for analyzing and visualizing car sales performance — built for data-driven decision-making in the automotive retail sector.
-
-![Dashboard Preview](screenshots/overview.png)
-
----
-
-## 📋 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Objectives](#-objectives)
-- [Dashboard Features](#-dashboard-features)
-- [Key Insights](#-key-insights)
-- [Tools & Technologies Used](#-tools--technologies-used)
-- [Dataset Description](#-dataset-description)
-- [Screenshots](#-screenshots)
-- [How to Use / Navigate the Dashboard](#-how-to-use--navigate-the-dashboard)
-- [Future Improvements](#-future-improvements)
-- [Conclusion](#-conclusion)
-
----
-
 ## 🔍 Project Overview
 
 The **Car Sales Dashboard** is a comprehensive business intelligence solution built using **Power BI**, designed to track, analyze, and visualize car sales performance across multiple dimensions — including time, geography, vehicle type, color, and dealership. The dashboard presents both high-level KPIs and granular transactional data, enabling stakeholders to make informed, data-driven business decisions.
 
-This project covers **Year-to-Date (YTD)** and **Month-to-Date (MTD)** sales metrics from **2022 car sales records**, providing a clear picture of performance trends, pricing behavior, and market distribution.
+This project covers **Year-to-Date (YTD)** and **Month-to-Date (MTD)** sales metrics from **2022-2023 car sales records**, providing a clear picture of performance trends, pricing behavior, and market distribution.
 
 ---
 
@@ -52,7 +31,7 @@ The dashboard is structured across two main views: **Overview** and **Details**.
 
 Three primary KPI cards sit prominently at the top of the dashboard, each displaying:
 - **YTD Total Sales**: Cumulative revenue generated for the year ($371.2M), with YoY growth indicator (+23.6%) and MTD value ($54.28M).
-- **YTD Average Price**: The average selling price across all transactions ($28.0K), with a slight MTD price dip ($223.48 / -0.79%) flagged in red.
+- **YTD Average Price**: The average selling price across all transactions ($28.0K), with a slight YoY price dip ($223.48 / -0.79%) flagged in red MTD value ($28.26M).
 - **YTD Cars Sold**: Total number of vehicles sold year-to-date (13,261), with period-over-period growth (+24.6%) and MTD count (1,921).
 
 Color-coded indicators (green for positive, red for negative) provide instant performance signals.
@@ -61,9 +40,9 @@ Color-coded indicators (green for positive, red for negative) provide instant pe
 
 #### 2. YTD Sales Weekly Trend — Line Chart
 
-A time-series line chart plots **weekly sales totals** across all 52 weeks of the year, allowing users to:
+A time-series line chart plots **weekly sales totals** across all 53 weeks of the year, allowing users to:
 - Spot **seasonal peaks and troughs** in sales activity.
-- Identify the **best-performing week** (Week ~36 peaked at $14.9M).
+- Identify the **best-performing week** (Week 36 peaked at $14.9M).
 - Observe a notable **dip at the year's end**, suggesting potential seasonal slowdown or data recency effects.
 
 ---
@@ -154,7 +133,7 @@ This view enables auditors and analysts to validate summary metrics and perform 
 YTD Total Sales of **$371.2M** reflect a **+23.6% YoY increase**, and cars sold are up **+24.6%**, signaling robust market demand. This growth outpaces typical industry benchmarks and suggests effective sales strategies and inventory management.
 
 ### 2. 💰 Slight Pricing Pressure
-Despite volume growth, the **YTD Average Price of $28.0K** reflects a marginal MTD dip of **-0.79% ($223.48)**. This could indicate increased promotional activity, a shift toward lower-priced models in the current month, or heightened competitive pricing pressure.
+Despite volume growth, the **YTD Average Price of $28.0K** reflects a marginal YoY dip of **-0.79% ($223.48)**. This could indicate increased promotional activity, a shift toward lower-priced models in the current year, or heightened competitive pricing pressure.
 
 ### 3. 🚙 SUVs Rule the Roost
 With **$99.9M in YTD sales**, SUVs account for the **largest revenue share** among body styles (~27% of total), far outpacing Hardtops ($51.4M). This mirrors broader industry trends toward utility vehicles and suggests dealers should prioritize SUV inventory stocking.
@@ -163,7 +142,7 @@ With **$99.9M in YTD sales**, SUVs account for the **largest revenue share** amo
 **Pale White** captures **47%** of all color-based sales — nearly one in every two cars sold is white. Combined with **Black (33.74%)**, neutral tones account for over **80%** of total sales. Red vehicles, while visually distinctive, account for only ~19%, suggesting a conservative color preference in this market.
 
 ### 5. 🏆 Chevrolet is the Volume Leader
-With **1,043 units sold (7.30% of total YTD sales)**, **Chevrolet** is the top-selling brand by volume. **Dodge (618 units)** and **Ford (886 units)** follow, confirming American domestic brands' dominance. Meanwhile, **Audi** lags behind with only 259 units — though at a **$22.2K average price**, it may serve a different buyer segment.
+With **1,043 units sold (7.30% of total YTD sales)**, **Chevrolet** is the top-selling brand by volume. **Dodge (949 units)** and **Ford (886 units)** follow, confirming American domestic brands' dominance. Meanwhile, **Jaguar** lags behind with only 102 units — though at a **$24.5K average price**, it may serve a different buyer segment.
 
 ### 6. 🗺️ Austin Leads Regional Sales
 The geographic map reveals **Austin, TX** as the highest-volume dealership region in the US. This warrants further investment in inventory, staffing, and marketing in and around the Austin market.
@@ -178,10 +157,9 @@ The weekly trend chart shows a **notable spike around Week 36 (~early September)
 | Tool / Technology | Purpose |
 |---|---|
 | **Microsoft Power BI Desktop** | Dashboard creation, data modeling, and visualization |
-| **Power Query (M Language)** | Data transformation and cleaning |
 | **DAX (Data Analysis Expressions)** | Custom KPI measures (YTD, MTD, YoY comparisons) |
 | **Microsoft Bing Maps** | Geographic sales map visualization |
-| **Microsoft Excel / CSV** | Source data format for car sales records |
+| **Microsoft Excel** | Source data format for car sales records |
 | **GitHub** | Version control and project hosting |
 
 ---
@@ -216,20 +194,14 @@ The dataset contains **individual car sales transaction records** from **2022**,
 ## 📸 Screenshots
 
 ### Overview Dashboard
-![Overview Dashboard](screenshots/overview.png)
+![Overview Dashboard](Screenshots/1-Overview.png)
 > *The main overview page showing KPIs, weekly trend, body style and color distribution, regional map, and company performance table.*
 
 ---
 
 ### Details View
-![Details View](screenshots/details.png)
+![Details View](Screenshots/2-Details.png)
 > *The detailed transaction-level table displaying individual car sale records.*
-
----
-
-### Raw Dataset (Excel)
-![Raw Dataset](screenshots/dataset.png)
-> *A preview of the underlying car sales dataset used to build this dashboard.*
 
 ---
 
@@ -242,10 +214,10 @@ The dataset contains **individual car sales transaction records** from **2022**,
 
 1. **Clone or download** this repository:
    ```bash
-   git clone https://github.com/your-username/car-sales-dashboard.git
+   git clone https://github.com/abhikroy-kol/Car-Sales-Dashboard.git
    ```
 
-2. **Open the file** `Car_Sales.pbix` in Power BI Desktop.
+2. **Open the file** `Car-Sales-Dashboard.pbix` in Power BI Desktop.
 
 3. **Explore the Overview page** — the default landing view — to review top-level KPIs and visual summaries.
 
@@ -264,40 +236,43 @@ The dataset contains **individual car sales transaction records** from **2022**,
 
 ---
 
+## 📁 Repository Structure
+ 
+```
+car-sales-dashboard/
+│
+├── 📁 Screenshots/
+│   ├── 1-Overview.png
+│   └── 2-Details.png
+│
+├── 📄 Car-Sales-Dashboard.pbix
+├── 📊 Car-Sales-Data.xlsx
+└── 📝 README.md
+
+```
+---
+
 ## 🚀 Future Improvements
 
 - [ ] **Profit & Margin Analysis** — Incorporate cost data to calculate gross profit per unit and by company.
 - [ ] **Customer Segmentation** — Leverage gender and annual income fields to build buyer persona analyses.
 - [ ] **Forecasting** — Add Power BI's built-in forecasting to project future YTD sales based on historical trends.
 - [ ] **Dealer Leaderboard** — Build a ranked view of top-performing dealers with drill-through capability.
-- [ ] **Mobile Layout** — Optimize the dashboard layout for Power BI mobile app consumption.
 - [ ] **Row-Level Security (RLS)** — Implement RLS so regional managers only see their own region's data.
-- [ ] **Live Data Connection** — Connect to a live SQL database or cloud data source for real-time updates.
 - [ ] **What-If Parameters** — Allow users to simulate the effect of price changes on total revenue.
 - [ ] **Bookmarks & Story Slides** — Create guided analytical narratives using Power BI bookmarks.
 
 ---
 
-## ✅ Conclusion
-
-The **Car Sales Dashboard** demonstrates the power of visual analytics in transforming raw transactional data into actionable business intelligence. By combining KPI tracking, time-series analysis, geographic mapping, and multi-dimensional filtering in a clean, dark-themed interface, this dashboard equips stakeholders at all levels — from dealership managers to executive leadership — with the insights they need to drive smarter sales strategies.
-
-The dashboard's **23.6% YoY revenue growth** and **24.6% increase in units sold** point to a thriving sales operation, while nuances like slight average price pressure and dominant color/body-style preferences offer clear direction for inventory optimization and targeted marketing.
-
-This project reflects the real-world value of Power BI as a business intelligence tool, and serves as a strong foundation for further analytical enhancements as outlined in the future improvements roadmap.
-
----
-
 ## 📬 Contact
 
-For questions, feedback, or collaboration, feel free to reach out:
+**ABHIK ROY**
 
-- **GitHub**: [@your-username](https://github.com/your-username)
-- **LinkedIn**: [Your Name](https://linkedin.com/in/your-profile)
-- **Email**: your.email@example.com
+📧 abhik.roy.kol@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/abhik-roy-kol) | [GitHub](https://github.com/abhikroy-kol)
 
 ---
 
 <p align="center">
-  Made with ❤️ using Power BI &nbsp;|&nbsp; ⭐ Star this repo if you found it helpful!
+  ⭐ If you found this project useful, please consider giving it a star! ⭐
 </p>
